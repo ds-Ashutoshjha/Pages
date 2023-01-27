@@ -39,8 +39,8 @@ const LocationCard: CardComponent<Location> = ({ result }) => {
 
 
       <h3 className="">
-        
-        <a href={result?.slug}>{result.rawData.name}</a> 
+
+        <a href={result?.rawData.slug}>{result.rawData.name}</a> 
 
       </h3>
       {/* <p className="text-sm text-slate-700">{address.line1}</p>
