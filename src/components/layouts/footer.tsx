@@ -35,16 +35,16 @@ const Footer = () => {
       <>
          <footer className="footer">
             <div className="container">
-               <div className="footerLogo">
+               {/* <div className="footerLogo">
                   <a className="logo" href="/">
                      <img className="" src={logo} alt="Prezzo" />
                   </a>
-               </div>
+               </div> */}
                <div className="footer_links">
                   <div className="column">
-                     <a href="/" target="_self" title="Prezzo" rel="noreferrer">
+                     {/* <a href="/" target="_self" title="Prezzo" rel="noreferrer">
                         <img src={pizzaLogo} alt="Logo" className="fadein imgFinal"/>
-                     </a>
+                     </a> */}
                      <div className="social-media">
                         <a href="#" target="_blank" title="Facebook" rel="noreferrer"><i className="fa fa-facebook-square" aria-hidden="true"></i></a>
                         <a href="#" target="_blank" title="Instagram" rel="noreferrer"><i className="fa fa-instagram" aria-hidden="true"></i></a>
@@ -52,13 +52,13 @@ const Footer = () => {
                      </div>
                   </div>
                   <div className="column">
-                     <h5>About Prezzo</h5>
+                     <h5>About </h5>
                      <ul>
                         <li><a href="https://jobs.prezzorestaurants.co.uk/" title="Careers">Careers</a></li>
                         <li><a href="/community-commitments/" title="Community Commitments">Community Commitments</a></li>
-                        <li><a href="/health/hub/" title="Health Hub">Health Hub</a></li>
+                        {/* <li><a href="/health/hub/" title="Health Hub">Health Hub</a></li> */}
                         <li><a href="/offers/" title="Offers">Offers</a></li>
-                        <li><a href="/competitions/" title="Competitions">Competitions</a></li>
+                        {/* <li><a href="/competitions/" title="Competitions">Competitions</a></li> */}
                      </ul>
                   </div>
                   <div className="column">

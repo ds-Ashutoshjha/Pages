@@ -307,7 +307,13 @@ function Infowindow(i:Number,result:any):void{
         (
         <div className="markerContent w-48 md:w-[350px] font-universpro font-normal text-darkgrey text-xs md:text-sm leading-6">
         <div className="nameData font-bold text-sm md:text-base">{result.name}</div>
+        <div className="nameData font-bold text-sm md:text-base">{result.rawData.address.line1}</div>
+        <div className="nameData font-bold text-sm md:text-base">{result.rawData.address.city}</div>
+        <div className="nameData font-bold text-sm md:text-base">{result.rawData.address.city.state}</div>
+        
+
         </div>
+         
         );
     let string=renderToString(MarkerContent);    
     infoWindow.setContent(string); 

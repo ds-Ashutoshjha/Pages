@@ -4,6 +4,8 @@ import { GetPath, Template, TemplateProps, TemplateRenderProps, TemplateConfig, 
   HeadConfig } from "@yext/pages";
 import { SearchHeadlessProvider, useSearchActions } from "@yext/search-headless-react";
 import PageLayout from "../components/layouts/PageLayout";
+import Header from "../components/layouts/header";
+import Footer from "../components/layouts/footer";
 import SearchLayout from "../components/locatorPage/SearchLayout";
 import {  AnswerExperienceConfig  } from "../config/globalConfig";
 
@@ -50,7 +52,8 @@ const providerOptions: google.maps.MapOptions = {
 
 return (
     <>
-  
+  <Header/>
+
         <SearchHeadlessProvider
             experienceKey={AnswerExperienceConfig.experienceKey}
             locale={AnswerExperienceConfig.locale}
@@ -58,10 +61,13 @@ return (
             verticalKey={AnswerExperienceConfig.verticalKey}
             experienceVersion={AnswerExperienceConfig.experienceVersion}
             sessionTrackingEnabled={AnswerExperienceConfig.sessionTrackingEnabled}  
-            endpoints={AnswerExperienceConfig.endpoints}         
+            endpoints={AnswerExperienceConfig.endpoints}   
+
         >
+
            <SearchLayout/>           
         </SearchHeadlessProvider>   
+        <Footer/>
     </>
   );
 };

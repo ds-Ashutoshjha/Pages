@@ -24,14 +24,14 @@ const links: Link[] = [
     label: "A Celebration of Flavour",
     url: "#",
   },
-  {
-    label: "E-gifts",
-    url: "#",
-  },
-  {
-    label: "Christmas",
-    url: "#",
-  },
+  // {
+  //   label: "E-gifts",
+  //   url: "#",
+  // },
+  // {
+  //   label: "Christmas",
+  //   url: "#",
+  // },
   {
     label: "Working with us",
     url: "#",
@@ -51,16 +51,17 @@ const Header = () => {
         <div className="container header-content">
           <div className="header-content-left">
             <a className="button" href="#">
-              <span className="is-hidden-touch">Find a restaurant</span></a>
+              <span className="is-hidden-touch">Way To Hotel</span></a>
             <a className="button" href="#" title="Book now">Book now</a>
           </div>
           <div className="header-content-middle">
-            <a className="logo" href="/">
-              <img className="" src={logo} alt="Prezzo"/>
-            </a>
+          <h1 style={{fontWeight:"bold",fontSize:"25px"}}> Tourist Guider</h1>
+            {/* <a className="logo" href="/">
+              <img className="" src={logo} alt="Tour"/>
+            </a> */}
           </div>
-          <div class="header-content-right lg:hidden">
-            <span class="navbar-burger burger" data-target="navbarMenu">
+          <div className="header-content-right lg:hidden">
+            <span className="navbar-burger burger" data-target="navbarMenu">
               <span></span>
               <span></span>
               <span></span>

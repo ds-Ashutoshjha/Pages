@@ -4,9 +4,11 @@ import { CardComponent } from "@yext/search-ui-react";
 import { Location } from "..//../types/search/locations";
 import Hours from '..//../components/commons/hours';
 import Address from "..//../components/commons/Address";
+import GetDirection from "..//../components/commons/GetDirection";
 import phonePin from "..//../images/phone.svg";
 import { formatPhoneNumber, formatPhoneNumberIntl } from 'react-phone-number-input';
 import OpenCloseStatus from "..//../components/commons/OpenCloseStatus";
+
 
 const metersToMiles = (meters: number) => {
   const miles = meters * 0.000621371;
@@ -29,12 +31,19 @@ const LocationCard: CardComponent<Location> = ({ result }) => {
   }
 
   return (
+    
     <div className={`location result`} id={`result-${result.index}`}>
+      {metersToMiles(result.distance)} miles
+
+
+
       <h3 className="">{result.rawData.name} 
+      
       </h3>
       {/* <p className="text-sm text-slate-700">{address.line1}</p>
       <p className="text-sm text-slate-700">{address.city}, {address.region}, {address.postalCode} </p> */}
       <Address address={address} />
+      <GetDirection/>
     </div >
   );
 }

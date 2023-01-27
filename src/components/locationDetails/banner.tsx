@@ -14,6 +14,8 @@ type Banner = {
   latitude?: any;
   longitude?: any;
   children?: React.ReactNode;
+  name?: string;
+  imgs?:any;
 };
 
 const Banner = (props: Banner) => {
@@ -32,7 +34,9 @@ const Banner = (props: Banner) => {
 
   return (
     <>
-      <div className="bg-green text-5xl font-bold text-white p-10 flex items-center justify-center flex-col gap-x-14 gap-y-10 md:flex-row">
+      <div className="bg-green text-5xl font-bold text-white p-10 flex items-center justify-center flex-col gap-x-14 gap-y-10 md:flex-row" style={{backgroundColor:"black"}}>
+        
+      
         <div>{text}</div>
         <div><OpenCloseStatus timezone={timezone} hours={hours}></OpenCloseStatus></div>
         <div>{formattedPhone}</div>
