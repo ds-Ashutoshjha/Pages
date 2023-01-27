@@ -159,7 +159,7 @@ import {
     } = document;
   
   
-    const images = photoGallery.map((img: any) => {
+    const images = photoGallery?.map((img: any) => {
       return <img src={img?.image?.url} />
     })
   
