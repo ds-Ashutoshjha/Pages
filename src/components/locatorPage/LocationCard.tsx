@@ -29,21 +29,24 @@ const LocationCard: CardComponent<Location> = ({ result }) => {
       setTimeStatus("");
     }
   }
+  console.log('result', result)
 
   return (
-    
+
     <div className={`location result`} id={`result-${result.index}`}>
       {metersToMiles(result.distance)} miles
 
 
 
-      <h3 className="">{result.rawData.name} 
-      
+      <h3 className="">
+        
+        <a href={result?.slug}>{result.rawData.name}</a> 
+
       </h3>
       {/* <p className="text-sm text-slate-700">{address.line1}</p>
       <p className="text-sm text-slate-700">{address.city}, {address.region}, {address.postalCode} </p> */}
       <Address address={address} />
-      <GetDirection/>
+      <GetDirection />
     </div >
   );
 }
